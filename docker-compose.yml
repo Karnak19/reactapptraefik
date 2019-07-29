@@ -1,0 +1,19 @@
+version: "2.1"
+
+services:
+  docker-react:
+    image: docker-react
+    build: .
+    environment:
+      NODE_ENV: production
+    networks:
+      - web
+    labels:
+      - traefik.frontend.rule=Host:bidart.wilders.dev;PathPrefixStrip:/reactapp
+      - traefik.enable=true
+      - traefik.backend=reactapp
+      - traefik.docker.network=web
+      - traefik.port=5000
+networks:
+  web:
+    external: true
