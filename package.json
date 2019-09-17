@@ -1,12 +1,17 @@
 {
-  "name": "docker-react",
+  "name": "logs-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "/c_clicker_monitor/",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "axios": "^0.19.0",
+    "moment": "^2.24.0",
+    "node-sass": "^4.12.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
